@@ -70,6 +70,7 @@ add_dependencies(${PROJECT_NAME}_static_transform_publisher ${catkin_EXPORTED_TA
 target_link_libraries(${PROJECT_NAME}_static_transform_publisher
   ${PROJECT_NAME}
   ${catkin_LIBRARIES}
+  pthread
 )
 set_target_properties(${PROJECT_NAME}_static_transform_publisher
   PROPERTIES OUTPUT_NAME static_transform_publisher
